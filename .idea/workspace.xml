@@ -17,9 +17,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
@@ -164,7 +161,7 @@
       <workItem from="1663507591114" duration="787000" />
       <workItem from="1663508507725" duration="2510000" />
       <workItem from="1664231527042" duration="2500000" />
-      <workItem from="1664309503854" duration="12380000" />
+      <workItem from="1664309503854" duration="12822000" />
     </task>
     <servers />
   </component>
