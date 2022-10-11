@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ mix('/resources/css/profile.css') }}">
+    <link rel="stylesheet" href="{{ mix('/resources/css/profile.css')}}">
+    
     <title>Midight</title>
 </head>
 <body>
+    
     <div class="navBar">
+        <div class="responsive">
+            <div class="menu"><a href=""  rel="noopener noreferrer"><i class="fa-solid fa-bars"></i></a></div>
+            <div class="logo1"><a href=""rel="noopener noreferrer">MD</a></div>
+            <div class="search-Ic"><a href="http://" rel="noopener noreferrer"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+        </div>
             <div class="container-logo">
                 <div class="logo"><strong> Midnight</strong></div>
+                
                 <div class="navLinks">
                     <ul class="Links">
                         <li><a href=""  rel="noopener noreferrer">Find agencies<i id="fle" class="fa-solid fa-caret-down"></i></a>
@@ -20,8 +28,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-
+            </div>            
             <div class="container-search">
                 <dir class="search">
                     <input id="locaction-field" type="search" placeholder="Where?">
@@ -33,13 +40,15 @@
                 </div>
             </div>
     </div>
+    
+            
 
 
 <div class="container-profile">
-                <img class="profile-Img" src="/resources/images/Capture.PNG" alt="" srcset="">
+                <img class="profile-Img" src="/Capture.PNG" alt="" srcset="">
 
                 <div class="profile-nav">
-                    <img src="/resources/images//midnight.png" alt="" srcset="">
+                    <img src="/midnight.png" alt="" srcset="">
                     <ul class="profile-nav-links">
                         <li class="for-border"><a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-address-card"></i>About</a></li>
                         <li class="for-border"><a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-pen-to-square"></i>Services</a></li>
@@ -202,29 +211,29 @@
                 <!--I CAN REPLACE THIS SECTION WITH THE grid-->
                 <div class="portfolio">
                     <div class="box-potfolio">
-                        <img class="images" src="/resources/images/midnight.png" alt="" srcset="">
+                        <img class="images" src="midnight.png" alt="" srcset="">
                         <p class="par">Lorem ipsum, dolor sit amet consectetur c<a href="http://" target="_blank" rel="noopener noreferrer">adipisicing</a> .</p>
                     </div>
                     <div class="box-potfolio">
-                        <img class="images" src="/resources/images/midnight.png" alt="" srcset="">
+                        <img class="images" src="midnight.png" alt="" srcset="">
                         <p class="par">Lorem ipsum, dolor sit amet consectetur c<a href="http://" target="_blank" rel="noopener noreferrer">adipisicing</a> .</p>
                     </div>
                     <div class="box-potfolio">
-                        <img class="images" src="/resources/images/midnight.png" alt="" srcset="">
+                        <img class="images" src="midnight.png" alt="" srcset="">
                         <p class="par">Lorem ipsum, dolor sit amet consectetur c<a href="http://" target="_blank" rel="noopener noreferrer">adipisicing</a> .</p>
                     </div>                    
                 </div>
                 <div class="portfolio1">
                     <div class="box-potfolio">
-                        <img class="images" src="/resources/images/midnight.png" alt="" srcset="">
+                        <img class="images" src="midnight.png" alt="" srcset="">
                         <p class="par">Lorem ipsum, dolor sit amet consectetur c<a href="http://" target="_blank" rel="noopener noreferrer">adipisicing</a> .</p>
                     </div>
                     <div class="box-potfolio">
-                        <img class="images" src="/resources/images/midnight.png" alt="" srcset="">
+                        <img class="images" src="midnight.png" alt="" srcset="">
                         <p class="par">Lorem ipsum, dolor sit amet consectetur c<a href="http://" target="_blank" rel="noopener noreferrer">adipisicing</a> .</p>
                     </div>
                     <div class="box-potfolio">
-                        <img class="images" src="/resources/images/midnight.png" alt="" srcset="">
+                        <img class="images" src="midnight.png" alt="" srcset="">
                         <p class="par">Lorem ipsum, dolor sit amet consectetur c<a href="http://" target="_blank" rel="noopener noreferrer">adipisicing</a> .</p>
                     </div>                    
                 </div>
@@ -251,15 +260,15 @@
                 </div>
                 <div class="awards">
                     <div class="box-award">
-                        <img class="images" src="resources/images/midnight.png" alt="" srcset="">
+                        <img class="images" src="midnight.png" alt="" srcset="">
                         <p class="par">Lorem ipsum, dolor sit amet consectetur c<a href="http://" target="_blank" rel="noopener noreferrer">adipisicing</a> .</p>
                     </div>
                     <div class="box-award">
-                        <img class="images" src="/resources/images/midnight.png" alt="" srcset="">
+                        <img class="images" src="midnight.png" alt="" srcset="">
                         <p class="par">Lorem ipsum, dolor sit amet consectetur c<a href="http://" target="_blank" rel="noopener noreferrer">adipisicing</a> .</p>
                     </div>
                     <div class="box-award">
-                        <img class="images" src="/resources/images/midnight.png" alt="" srcset="">
+                        <img class="images" src="midnight.png" alt="" srcset="">
                         <p class="par">Lorem ipsum, dolor sit amet consectetur c<a href="http://" target="_blank" rel="noopener noreferrer">adipisicing</a> .</p>
                     </div>                    
                 </div>
@@ -339,6 +348,6 @@
 
 
     <script src="https://kit.fontawesome.com/ce35cf2649.js" crossorigin="anonymous"></script>
-    <script src="resources/js"></script>
+    <script src="landingP.js"></script>
 </body>
 </html>

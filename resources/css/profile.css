@@ -57,6 +57,12 @@ body{
     font-family: kanit;
     margin-left: -50px;
 }
+.navBar 
+.responsive{
+    width: 100%;
+    justify-content: space-between;
+    display: none;
+}
 .navBar .container-logo{
     display: flex;
     align-items: center;
@@ -128,12 +134,37 @@ body{
 }
 
 
-/*
-@media screen and (max-width : 1000px){
-    .navBar{
-        background-color: #2727ed;
+
+@media screen and (max-width : 925px){
+    .navBar .Links{
+        display: none;
+    } 
+    
+    .navBar .container-search{
+        display: none;
     }
-} */
+    .navBar .logo{
+        display: none;
+    }
+    .navBar .responsive{
+        display: flex;        
+    }
+    .navBar .responsive .logo1 a{
+        border-radius: 50% ;
+        padding: 10px;
+        background-color: black;
+        color: white;
+
+    }
+    .navBar .responsive > div {
+    font-size: 20px;
+    font-weight: bolder;
+    }
+    .navBar .responsive > div > a{
+        text-decoration: none;
+        color: black;
+    }
+} 
 
 
 /* END OF NAVBAR*/
