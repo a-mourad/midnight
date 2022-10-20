@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Kanit:wght@300&family=Peralta&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-nav 
+.top-logo {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.container-nav 
+.top-logo h2{
+    color: white;
+    padding-left: 20px;
+
+}
+.container-nav 
+.top-nav {
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+}
+.container-nav 
+.top-nav ul{
+    display: flex;
+}
+.container-nav 
+.top-nav ul li{
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    border-right: 1.5px solid grey;
+}
+.container-nav 
+.top-nav > ul > li > a {
+    text-decoration: none;
+    font-size: 168px;
+    font-size: large;
+    color: black;
+}
+/*
+.container
+.container-holder {
+    width: 50%;
+    padding: 10% 10%;
+}*/
+.container
+.container-holder{
+    border: 1px solid;
+    padding: 10px;
+    background-color: rgb(236, 239, 242);
+    border-width: 0; 
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px 10%;
+}
+.container
+.container-holder form{
+    padding: 25px;
+    height: 250px;
+    display: flex;    
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.container
+.container-holder form div label{
+    padding-left: 12%;
+}
+.container
+.container-holder #btn-submit{
+    padding: 5px 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: rgb(212, 210, 210);
+
+}
+.container
+.container-holder form div input{
+    padding: 5px ;
+    border-width:0 ;
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+}
+.container
+.container-holder form div input::placeholder{
+    font-size: 10px;
+    margin-left: 50px;
+}
+.container 
+.include-company {
+    margin-top: -35px ;
+    padding-left: 5%;
+
+}
+
+/*footer starts here*/
+
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(238, 239, 239);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 50px;
+}
+footer
+.head{
+    padding: 25px;
+    font-family: kanit;
+}
+footer .footerBody{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+footer .footerBody ul > li{
+    list-style: none;
+    padding: 6px;
+    font-family: kanit;
+    margin-left: 20px;
+}
+footer
+.contact{
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+footer
+.contact 
+.sm{
+    width: 40%;
+}
+footer
+.contact 
+.sm > i{
+    padding-right: 30px;
+    font-size: 30px;
+}
+footer
+.contact 
+.subs{
+    width: 50%;
+}
+footer
+.contact 
+.subs > label {
+    font-family: kanit;
+    padding: 20px;
+    font-size: larger;
+    color: red;
+    margin-left: 10px;
+}
+footer
+.contact 
+.subs > input {
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 40%;
+}
+footer 
+.copyright{
+    text-align: center;
+    padding: 10px;
+    font-family: kanit;
+}

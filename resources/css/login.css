@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Kanit:wght@300&family=Peralta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+.container
+.container-left{
+    position:absolute;
+    width: 60%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(207, 178, 141);
+}
+.container
+.container-left .para{
+    margin-left: 8%;
+    padding-top: 22%;
+    padding-right: 15%;
+    margin-right: 50px;
+    font-family: kanit;
+}
+.container
+.container-left .para h1{
+    padding: 15px;
+    text-decoration: overline;
+}
+.container
+.container-left .para > p{
+    padding-left: 30px;
+}
+.container
+.container-right{
+    position:absolute;
+    width: 40%;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(230, 236, 234);
+    
+}
+.container
+.container-box{
+    position: absolute;
+    width: 30%;   
+    box-shadow: 2px 20px 20px 6px rgb(203, 202, 202);
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 50px;
+    top: 15%;
+    left: 50%;
+    z-index: 1;
+    text-align: center;
+}
+.container
+.container-box{
+    font-family: kanit;
+    padding: 2%;
+}
+.container
+.container-box .top{
+    height: 70%;
+}
+
+.container
+.container-box .top h1{
+    padding: 15px;
+}
+
+.container
+.container-box 
+.login-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container
+.container-box 
+.login-options > ul {
+    display: flex;
+    list-style: none;    
+}
+.container
+.container-box 
+.login-options > ul >li{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    justify-content: space-around;
+}
+.container
+.container-box 
+.login-options > ul >li > a{
+    font-size: 20px;
+    color: rgb(72, 72, 132)
+}
+.container
+.container-box .bottom{
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+.container
+.container-box .bottom h6{
+    padding-left: 30%;
+}
+.container
+.container-box .bottom a{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.container
+.container-box input{
+    padding: 8px;
+    width: 80%;
+    outline: none;
+    margin-bottom: 10px;
+    border-width: 0;
+    border-bottom: 1px solid;
+}
+.container
+.container-box  a{
+    float: left;
+    padding-left: 8%;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+.container
+.container-box button {
+    width: 85%;
+    padding: 8px ;
+    border-radius: 6px;
+    border-width: 0;
+}
+.container
+.container-box .contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.container
+.container-box .contact ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-bottom: -15px;
+}
+.container
+.container-box .contact ul > li{
+    text-align: center;
+    align-items: center;
+    list-style: none;
+}
+.container
+.devider{
+    margin: 10px;
+}
+@media screen and (max-width : 800px){
+    body{
+        background-color:  rgb(207, 178, 141);
+    }
+    .container .container-left {
+        display: none;
+    }
+    .container .container-right{
+        display: none;
+    }
+    .container .container-box .contact{
+        display: none;
+    }
+    .container .container-box{
+        position: absolute;
+        margin-left: -30%;
+        width: 50%;
+    }
+    .contact1{
+        position: absolute;
+        left: 25%;
+        z-index: 2000;
+        font-family: kanit;
+        padding: 10px;
+        margin-right: 20px;
+    }
+    .contact1 ul{
+        text-decoration: underline;        
+        display: flex;
+        margin-left: -20px;
+        font-weight:  bold ;
+        justify-content: center;
+    }
+    .contact1 ul > li {
+        list-style: none;
+        padding: 10px;   
+        
+        border-radius: 20px; 
+    }
+    .contact1 ul > li:hover{
+        transform: scale(1.1);        
+        transition: all 0.5s ease-in-out;   
+        background-color: rgb(230, 236, 234);
+    }
+}
+

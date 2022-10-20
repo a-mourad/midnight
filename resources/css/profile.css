@@ -143,11 +143,15 @@ body{
     .navBar .container-search{
         display: none;
     }
+
     .navBar .logo{
         display: none;
     }
     .navBar .responsive{
         display: flex;        
+    }
+    .profile-nav .profile-nav-links{
+        overflow: scroll;
     }
     .navBar .responsive .logo1 a{
         border-radius: 50% ;
