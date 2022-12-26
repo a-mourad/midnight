@@ -1,0 +1,98 @@
+.title{
+    padding: 20px;
+    text-align: center;
+}
+.container_about{
+    
+    border: 0.1px solid gray;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    
+}
+.container_about > form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+   
+
+}
+
+.container_about > form input {
+
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: rgb(227, 238, 238);
+    outline: none;
+}
+
+.container_about > form > textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: rgb(227, 238, 238);
+    outline: none;
+}
+
+.container_about > form > button {
+    margin-left: 75%;
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 100px;
+
+}
+
+
+.container_servieces{
+    border: 0.1px solid gray;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.container_servieces > form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.container_servieces > form > input {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: rgb(227, 238, 238);
+}
+
+.container_servieces > form > #category {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: rgb(227, 238, 238);
+}
+
+
+
+.container_servieces > form > textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: rgb(227, 238, 238);
+    outline: none;
+
+}
+.container_servieces > form  .btns{
+    margin-left: 75%;
+
+}
+.container_servieces > form  .btns  > button  {
+    padding: 3px;
+    margin-bottom: 8px;
+}
