@@ -59,7 +59,7 @@ class UserController extends Controller
        
     }
     
-    public function postRegister(REQUEST $request) {
+    public function postRegister(Request $request) {
 
         $request ->validate([
             'first_name' => 'required',

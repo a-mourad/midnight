@@ -6,7 +6,7 @@
     font-family: kanit;
 }
 
-.navBar{
+.navbar{
     width: 100%;
     display: flex;
     position: fixed;

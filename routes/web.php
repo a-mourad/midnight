@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\UserController;
 use App\Http\Controllers\CompaniesController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ServicesController;
 use App\Models\User;
 
@@ -31,6 +32,7 @@ Route::get('/agencyListingPages',[UserController::class,'agencyListingPagee']);
 
 
 Route::get('testcompany', [UserController::class,'test']);
+Route::get('search', [SearchController::class,'services'])->name('search');
 
 
 // form for register and login

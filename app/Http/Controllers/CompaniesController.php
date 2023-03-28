@@ -31,19 +31,22 @@ class CompaniesController extends Controller
     public function store(Request $request)
     { 
       
-         $company = [
-            'user_id' => auth()->id(),
-            'name' =>$request->name,
-            'phone'=>$request->phone,
-            'email'=>$request->email,
-            'team_size'=>$request->team_size,
-            'description'=>$request->description,
-            'logo'=>$request->logo,
-            'creation_date'=>$request->creation_date,
-            'city_id'=>$request->city_id,
-            'country_id'=>$request->country_id,
-            'image_backdrop'=>$request->image_backdrop,
-        ];
+        
+        $request ->validate([
+            'name'  => 'required|max:220',
+            'phone' =>'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+            'email' => 'required|unique:companies',
+            'team_size' => 'required',
+            'description' => 'required',
+            'logo' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+            'creation_date' => 'required',
+            'city_id' => 'required',
+            'country_id' => 'required',
+            'image_backdrop' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+       
+        ]);
+
+        $company = $request->all();
 
         //if($request->hasFile('logo')&&$request->hash_file('image_backdrop'))
        

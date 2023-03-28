@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* navbar search*/
+.form-row{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    
+}
+
