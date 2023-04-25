@@ -17,11 +17,11 @@ class ServicesController extends Controller
      */
     public function index(Company $company)
     {
-        
+
         //$services = Service::where('company_id', $company->id)->get();
         $services = $company->services;
 
-        return view('services.index',['services' => $services,'company'=>$company]);
+        return view('template.services.index', ['services' => $services, 'company' => $company]);
     }
 
     /**
@@ -33,7 +33,7 @@ class ServicesController extends Controller
     {
         //
 
-        return view('services.create',['company'=>$company]);
+        return view('template.services.create', ['company' => $company]);
     }
 
     /**
@@ -42,30 +42,30 @@ class ServicesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,Company $company)
+    public function store(Request $request, Company $company)
     {
         //$service = new Service ; 
-        $service =[
-            
+        $service = [
+
             'title' => $request->title,
-            'category_id' =>$request->category_id,
-            'description' =>$request->description,
-            'image' =>$request->image,
+            'category_id' => $request->category_id,
+            'description' => $request->description,
+            'image' => $request->image,
             'min_budget' => $request->min_budget,
 
         ];
- 
-        if($request->hasFile('image')) {
+
+        if ($request->hasFile('image')) {
             $name = $request->image->getClientOriginalName();
             $service['image'] = $request->file('image')->move('images', $name);
         }
 
-         $service['user_id'] = auth()->id();
+        $service['user_id'] = auth()->id();
 
-       // $service->save();
-       $company->services()->create($service);
-       
-        return to_route('companies.services.index',['company'=>$company]);
+        // $service->save();
+        $company->services()->create($service);
+
+        return to_route('companies.services.index', ['company' => $company]);
     }
 
     /**
@@ -77,8 +77,7 @@ class ServicesController extends Controller
     public function show(Service $service)
     {
         //
-        return view('services.show',['x' => $service]);
-        
+        return view('services.show', ['x' => $service]);
     }
 
     /**
@@ -90,7 +89,7 @@ class ServicesController extends Controller
     public function edit(Service $service)
     {
         //
-        return view('services.edit',['service' => $service]);
+        return view('services.edit', ['service' => $service]);
     }
 
     /**
@@ -100,29 +99,28 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,Service $service)
+    public function update(Request $request, Service $service)
     {
-            
-         $request->validate([
+
+        $request->validate([
             'title' => 'required', 'unique:servies', 'max:255',
             'category_id' => 'required',
             'description' => 'required',
             'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
-            'min_budget' => 'required' ,
+            'min_budget' => 'required',
             //'company_id' => ['required'],
 
         ]);
-        
+
         $data = $request->all();
-    
-        if($request->hasFile('image')) {
+
+        if ($request->hasFile('image')) {
             $name = $request->image->getClientOriginalName();
             $data['image'] = $request->file('image')->move('images', $name);
         }
-        
+
         $service->update($data);
-        return to_route('companies.services.index',['company'=>$service->company]);
-    
+        return to_route('companies.services.index', ['company' => $service->company]);
     }
 
     /**
@@ -133,10 +131,9 @@ class ServicesController extends Controller
      */
     public function destroy(Service $service)
     {
-        
-       // $service = Service::find();
+
+        // $service = Service::find();
         $service->delete();
-     return to_route('companies.services.index',['company'=>$service->company]);
-     
+        return to_route('companies.services.index', ['company' => $service->company]);
     }
 }

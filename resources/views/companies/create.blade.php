@@ -2,8 +2,6 @@
 @section('content')
 
 
-
-
     <h2 class="title">Company's contact informations</h2>
     @if ($errors->any())
     <div class="alert alert-danger">

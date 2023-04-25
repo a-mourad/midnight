@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\UserController;
 use App\Http\Controllers\CompaniesController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ServicesController;
 use App\Models\User;
@@ -20,7 +21,7 @@ use App\Models\User;
 
 //Route::get('/',[midnightController::class,'landing']);
 
-    //// Show Login Form
+//// Show Login Form
 /*Route::get('/login',[UserController::class,'login']);
 Route::post('/postLogin',[UserController::class,'postLogin']);
 //register form
@@ -31,19 +32,19 @@ Route::get('/agencyListingPages',[UserController::class,'agencyListingPagee']);
 */
 
 
-Route::get('testcompany', [UserController::class,'test']);
-Route::get('search', [SearchController::class,'services'])->name('search');
+Route::get('testcompany', [UserController::class, 'test']);
+Route::get('search', [SearchController::class, 'services'])->name('search');
 
 
 // form for register and login
-Route::get('/login',[UserController::class,'login'])->name('login');
+Route::get('/login', [UserController::class, 'login'])->name('login');
 
-Route::get('/register',[UserController::class,'register'])->name('register');
-Route::post('/postLogin',[UserController::class,'postLogin'])->name('postLogin');
+Route::get('/register', [UserController::class, 'register'])->name('register');
+Route::post('/postLogin', [UserController::class, 'postLogin'])->name('postLogin');
 
-Route::get('/logout',[UserController::class,'logoutUser'])->name('logout');
+Route::get('/logout', [UserController::class, 'logoutUser'])->name('logout');
 
-Route::post('/postRegister',[UserController::class,'postRegister'])->name('postRegister');
+Route::post('/postRegister', [UserController::class, 'postRegister'])->name('postRegister');
 
 //test//
 //Route::get('/logout',[UserController::class,'logoutUser']);
@@ -51,7 +52,11 @@ Route::post('/postRegister',[UserController::class,'postRegister'])->name('postR
 
 
 // midnghitController:
-Route::resource('companies',CompaniesController::class);
+Route::resource('companies', CompaniesController::class);
 
 //servicesController:
-Route::resource('companies.services',ServicesController::class)->shallow();
+Route::resource('companies.services', ServicesController::class)->shallow();
+
+// from new template 
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/nav_login', [HomeController::class, 'nav_login']);

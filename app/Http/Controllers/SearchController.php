@@ -16,31 +16,28 @@ class SearchController extends Controller
     {
 
         $query = Service::query();
-           
-        if($request->title  !== null){
 
-             $query->where('title', 'like', $request->get('title'));
+        if ($request->title  !== null) {
+
+            $query->where('title', 'like', $request->get('title'));
         }
 
-        if($request->min_budget  !== null){
-            
-           $query->where('min_budget', '<=', $request->get('min_budget'));
+        if ($request->min_budget  !== null) {
+
+            $query->where('min_budget', '<=', $request->get('min_budget'));
         }
-        
-        if($request->category_id  !== null){
+
+        if ($request->category_id  !== null) {
 
             $query->where('category_id', $request->get('category_id'));
         }
         $j = $query->get();
-        
-        
+
+
 
 
 
         //services
-        return view('search',['taz'=>$j]);
-   
+        return view('search', ['services' => $j]);
     }
-
-  
 }

@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+   padding: 0;
+   font-family: kanit;
+   
+}
+
+#page-banner{
+   background-color:rgb(54, 46, 54);
+   padding: 70px;
+   color: white;
+}

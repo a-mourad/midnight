@@ -19,25 +19,28 @@ class Company extends Model
         'creation_date',
         'country_id',
         'city_id',
+        'image_backdrop',
 
     ];
     public $timestamps = ['updated_at', 'created_at'];
 
-    public function user(){
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 
-    public function city(){
-       return  $this->belongsTo(City::class);
+    public function city()
+    {
+        return  $this->belongsTo(City::class);
     }
 
-    public function services(){
+    public function services()
+    {
         return $this->hasMany(Service::class);
     }
-    
-    public function country(){
+
+    public function country()
+    {
         return $this->belongsTo(Country::class);
     }
-
-
 }

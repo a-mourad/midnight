@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+
+/*
+body {
+
+    width: 100%;
+    background-image: url('imgs/login1.jpg');
+    background-size: 90%;
+    margin-left: 90px;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+}
+*/
+
+.bg-image {
+    background-image: url('/public/imgs/login3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+
+
+}
+
+
+#row {
+    background-color: white;
+    width: 26%;
+    height: 500px;
+    margin-top: 180px;
+    margin-left: 10%;
+    margin-right: 20%;
+    padding-left: 20px;
+    border-radius: 2px;
+
+
+}
+
+
+
+#row .btn-primary {
+    background-color: white;
+    width: 172px;
+    padding: 15px;
+    border: 0px solid;
+    text-align: center;
+
+}
+
+#row .btn-secondary {
+    background-color: rgb(231, 225, 225);
+    border: 0px solid;
+    padding: 15px;
+    width: 172px;
+}
+
+#row h3 {
+    font-size: medium;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+#row p {
+    font-weight: 200;
+    font-size: small;
+    color: gray;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+form input {
+    border: 1px solid rgb(215, 211, 211);
+    padding: 12px;
+    margin-bottom: 6px;
+    padding-right: 190px;
+    border-radius: 3px;
+    font-size: x-small;
+    font-weight: 300;
+
+}
+
+form .btn-block {
+    color: white;
+    background-color: #ee6c4d;
+    padding: 14px 23px;
+    border-radius: 3px;
+    border: 0;
+    font-weight: 600;
+}
+
+h4 {
+    margin-top: 20px;
+
+    color: rgb(65, 64, 64);
+}
+
+#btn {
+    margin-top: 15px;
+
+}
+
+#btn span {
+    padding-left: 90px;
+
+}
+
+.fa-facebook:before {
+
+    font-size: large;
+}
+
+#btn .fa-facebook {
+    padding: 6px;
+    padding-right: 86px;
+    background-color: rgb(68, 68, 241);
+    color: white;
+    border: 0;
+    border-radius: 3px;
+
+}
+
+.fa-google:before {
+
+    font-size: large;
+}
+
+#btn .fa-google {
+    margin-top: 5px;
+    border: 0;
+    border-radius: 3px;
+    padding: 6px;
+    padding-right: 100px;
+    color: white;
+    background-color: rgb(243, 64, 64);
+}
+
+.fa-twitter:before {
+    font-size: large;
+}
+
+#btn .fa-twitter {
+    margin-top: 5px;
+    border: 0;
+    border-radius: 3px;
+    padding: 6px;
+    padding-right: 99px;
+    color: white;
+    background-color: rgb(47, 201, 235);
+}

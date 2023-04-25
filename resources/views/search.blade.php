@@ -2,7 +2,6 @@
 @extends('layout')
 @section('content')
 
-
 <form  class="form-inline md-form mr-auto mb-4" action="{{route('search')}}" method="GET">
     <div class="form-row">
     <div class="relative border-2 border-gray-100 m-4 rounded-lg">
@@ -33,8 +32,9 @@
     </div>
     </div>
 
+</form>
     <div class="container">
-        @foreach($taz as $service)
+        @foreach($services as $service)
         <div class="card" style="width: 18rem;">
             <div class="row">
                 <img src="{{'/'.$service->image}}" class="card-img-top" alt="...">
@@ -51,7 +51,7 @@
       </div>
     </div>
     
-</form>
+
 
 
 
